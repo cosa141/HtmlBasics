@@ -27,8 +27,9 @@
     <form action="https://www.google.com" method="get">
       <h1>Log in</h1>
       <h2>Please input your Email and password</h2>
-      <input type="email" name="useremail" value="ex: user@gmail.com">
-      <input type="password" name="password" value="">
+      <input type="email" name="useremail" placeholder="ex: user@gmail.com" required>
+      <input type="password" name="password" value="" required>
+      <!-- use required for required fields on inputs -->
       <input type="submit" name="" value="Submit">
     </form>
 
@@ -37,9 +38,17 @@
       <h3>click button</h3>
       <input type="color" name="" value="">
     </form>
+
     <form>
       <h2>Enter random text</h2>
       <input type="text" name="" value="">
     </form>
+
+    <label for="userinput">Enter input:</label>
+    <input id="userinput" type="text" name="" placeholder="Hello World">
+
+
   </body>
+
+
 </html>
