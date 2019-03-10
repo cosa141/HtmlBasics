@@ -1,0 +1,14 @@
+/* this is a comment */
+
+h1{
+  color: blue;
+}
+li{
+  color: rgb(211, 35, 199)
+}
+p{
+  color: #2bbbe2;
+}
+h4{
+  color: rgba(211, 35, 199, 0.5); /*use rgba to choose the level ot transparence */
+}
