@@ -1,0 +1,16 @@
+body{
+  background-color: gray;
+}
+div{
+  background: url(https://postmediacanoe.files.wordpress.com/2018/09/woods1000getty.jpg);
+  border-color: black;
+  border-width: thick;
+  border-style: double;
+}
+p{
+  color: yellow;
+}
+span{
+  background: red;
+  color: black;
+}
