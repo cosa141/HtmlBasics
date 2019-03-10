@@ -1,0 +1,22 @@
+.firstDiv{
+  color: red;
+}
+.secondDiv{
+  color: blue;
+}
+#singledout{
+  color: green;
+  text-decoration: line-through;
+}
+h3 + ul{
+  border: 4px dotted purple;
+}
+li a{
+  color: red;
+}
+/* all anchor tags next to a list */
+li a[href="www.npr.org"]{
+  color: blue;
+  border: 5px solid orange;
+}
+/* any anchor tag with that link in it */
