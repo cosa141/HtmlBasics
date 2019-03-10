@@ -1,0 +1,15 @@
+
+body{
+  font-size: 20px;
+}
+#two{
+  font-size: 1.0em;  /* this is going to be that number of times bigger than what is set in the body */
+}
+p{
+  font-family: 'Marck Script', cursive;
+  font-weight: bold;
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
