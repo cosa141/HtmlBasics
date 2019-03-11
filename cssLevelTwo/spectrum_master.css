@@ -4,29 +4,25 @@ h1{
 }
 #one{
   background-color: #C81D25;
-  padding: 200px 75px;
-  margin: 100px;
-  align-self: center;
 }
 #two{
   background-color: #FF5A5F;
-  padding: 200px 75px;
-  align-self: center;
 }
 #three{
   background-color: #0B3954;
-  padding: 200px 75px;
 }
 #four{
   background-color: #087E8B;
-  padding: 200px 75px;
 }
 #five{
   background-color: #BFD7EA;
-  padding: 200px 75px;
-  
 }
 .art{
   margin: auto;
   border: 20px;
+}
+td{
+  height: 300px;
+  width: 150px;
+  border: 6px solid white;
 }
