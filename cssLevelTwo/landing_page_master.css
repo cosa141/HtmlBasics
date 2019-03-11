@@ -1,0 +1,22 @@
+body{
+  font-family: 'Markazi Text', serif;
+  background-color: #00173d;
+  text-align: center;
+  color: white;
+  border-left: 20px solid #0dd4db;
+  border-bottom: 20px solid #0dd4db;
+  border-right: 20px solid #0dd4db;
+}
+p{
+  align-self: auto;
+  width: 60%;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+#sub{
+  width: 150px;
+  height: 50px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: orange;
+}
