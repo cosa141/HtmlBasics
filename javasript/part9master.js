@@ -5,24 +5,25 @@ var firstName = prompt('What is your first name?');
 
 var lastName = prompt('What is your last name?');
 if (firstName[0]===lastName[0]) {
-  comrade+=2
+  comrade++
 }
 var age = prompt('What is your Age?');
 if (age>20 && age<30) {
   comrade++
 }
 var height = prompt('What is your height in centimeters?');
-if (height>170) {
+if (height>=170) {
   comrade++
 }
 var pet = prompt('What is your pets name?');
-if (pet[-1]=='y') {
+if (pet[pet.length-1]==='y') {
   comrade++
 }
-// use the ifs to make comrade reach 5 if all statements are good
+alert('Thank you for this information!')
+// use the ifs to make comrade reached 4 if all statements are good
 
-if (comrade==4) {
-  console.log('Hello there Comrade! Welcome');
+if (comrade===4) {
+  console.log("Hello there Comrade! You've passed the Spy test!");
 }else {
   console.log('Nothing to see here my friend...');
 }
