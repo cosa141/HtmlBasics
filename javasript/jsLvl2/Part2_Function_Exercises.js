@@ -33,7 +33,10 @@ function sleepIn(weekday, vacation) {
       return false
     }
 }
-
+//simple version
+function sleepInTwo(weekday, vacation) {
+  return (vacation || !weekday)
+}
 
 //
 // PROBLEM 2: MONKEY TROUBLE
@@ -56,7 +59,10 @@ function monkeyTrouble(aSmile, bSmile) {
       return false
     }
 }
-
+//simple version
+function monkeyTroubleTwo(aSmile, bSmile) {
+  return (aSmile==bSmile)
+}
 //
 // PROBLEM 3: STRING TIMES
 //
@@ -142,7 +148,19 @@ function caught_speeding(speed, is_birthday){
   }
   return ticket;
 }
-
+//slightly simpler
+function caught_speeding_again(speed, is_birthday) {
+  if (is_birthday) {
+    speed-=5
+  }
+  if (speed<=60) {
+    return 0
+  }else if (61 < speed<=80) {
+    return 1
+  }else {
+    return 2
+  }
+}
 
 // BONUS: MAKE BRICKS
 //
@@ -156,7 +174,8 @@ function caught_speeding(speed, is_birthday){
 // makeBricks(3, 1, 8) → true
 // makeBricks(3, 1, 9) → false
 // makeBricks(3, 2, 10) → true
-
+// THE WAY I DID IT WAS WRONG SINCE IF YOU HAVE
+// 3,3,14 IT WOULD RETURN TRUE WHEN ITS FALSE 
 function makeBricks(small, big, goal){
   //Code Goes Here
   if (small +(big*5)>=goal) {
@@ -164,5 +183,13 @@ function makeBricks(small, big, goal){
   }else {
     return false
   }
-
-  }
+}
+//the best way to do this; slightly too advanced atm for me lol
+function makeBricksTwo(small, big, goal) {
+    return (big * 5 + small >= goal && goal % 5 <= small)
+}
+// function makeBricks(small, big, goal){
+//   //Code Goes Here
+//   return (small +(big*5)>=goal)
+// }
+makeBricks(3,3,14)
