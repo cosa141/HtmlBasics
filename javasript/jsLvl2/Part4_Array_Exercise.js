@@ -11,28 +11,21 @@ var roster = []
 
 // Create a function called addNew that takes in a name
 // and uses .push to add a new student to the array
-function addNew() {
-  var newName = prompt('What name would you like to add?')
-  roster.push(newName)
-}
 
-// function addNew(name) {
-//   roster.push(name)
-// }
+
+function addNew(name) {
+  roster.push(name)
+}
 
 // REMOVE STUDENT
 
 // Create a function called remove that takes in a name
 // Finds its index location, then removes that name from the roster
-function remove() {
-  var remName = prompt('What name would you like to remove?')
-  var index = roster.indexOf(remName);
+function remove(name) {
+  var index = roster.indexOf(name);
   roster.splice(index,1)
 }
 
-function remove(name) {
-  roster.pop(roster[name])
-}
 // HINT: http://stackoverflow.com/questions/5767325/how-to-remove-a-particular-element-from-an-array-in-javascript
 //
 
@@ -48,7 +41,7 @@ var play = prompt('Would you like to play? y/n')
 // Now create a while loop that keeps asking for an action (add,remove, display or quit)
 // Use if and else if statements to execute the correct function for each command.
 
-while (play=='y') {
+while (play==='y') {
   var response=prompt('Would you like to add, remove, quit or view your list?')
   if (response=='add') {
     var adding=prompt('Enter the name you would like to add.')
