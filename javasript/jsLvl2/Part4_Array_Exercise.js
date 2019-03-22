@@ -11,14 +11,25 @@ var roster = []
 
 // Create a function called addNew that takes in a name
 // and uses .push to add a new student to the array
-function addNew(name) {
-  roster.push(name)
+function addNew() {
+  var newName = prompt('What name would you like to add?')
+  roster.push(newName)
 }
+
+// function addNew(name) {
+//   roster.push(name)
+// }
 
 // REMOVE STUDENT
 
 // Create a function called remove that takes in a name
 // Finds its index location, then removes that name from the roster
+function remove() {
+  var remName = prompt('What name would you like to remove?')
+  var index = roster.indexOf(remName);
+  roster.splice(index,1)
+}
+
 function remove(name) {
   roster.pop(roster[name])
 }
