@@ -8,9 +8,9 @@
 var employee = {
   name: "John Smith",
   job: "Programmer",
-  age: 31
-  nameLength: function() {
-    console.log(length(this.name));
+  age: 31,
+  nameLength: function(){
+    console.log(this.name.length);
   }
 }
 
@@ -26,13 +26,16 @@ var employee = {
 var employee = {
   name: "John Smith",
   job: "Programmer",
-  age: 31
-}
-function showEmployee() {
-  for (itmen in employee) {
-    alert(itmen+' is '+employee[itmen])
+  age: 31,
+  report: function(){
+    alert('Name is '+this.name +', Job is '+this.job+', Age is '+this.age)
   }
 }
+// function showEmployee() {
+//   for (itmen in employee) {
+//     alert(itmen+' is '+employee[itmen])
+//   }
+// }
 // Write program that will create an Alert in the browser of each of the
 // object's values for the key value pairs. For example, it should alert:
 
@@ -48,10 +51,9 @@ function showEmployee() {
 var employee = {
   name: "John Smith",
   job: "Programmer",
-  age: 31
-  lastName: function() {
-    lastOne=this.name.split()
-    console.log(lastOne[1]);
+  age: 31,
+  lastName: function(){
+    console.log(this.name.split(' ')[1]);
   }
 }
 
