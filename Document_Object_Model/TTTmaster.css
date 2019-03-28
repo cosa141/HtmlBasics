@@ -3,10 +3,13 @@ table{
   width: 500px;
   height: 500px;
   margin: auto;
+  table-layout: fixed;
 }
 td{
   border: 5px solid black;
   font-size: 100px;
   text-align: center;
-  
+  table-layout: fixed;
+  width: 165px;
+  height: 165px;
 }
