@@ -6,8 +6,13 @@ var playerTwoColor = 'rgb(3, 101, 249)';
 var game_on = true;
 var table = $('table tr');
 
-
-
+function reportWin(rowNum, colNum) {
+  console.log(rowNum);
+  console.log(colNum);
+}
+function changeColor(rowIndex, colIndex, color) {
+  return table.eq(rowIndex).find('td').eq(colIndex).find('button').css('background-color', color);
+}
 
 
 
