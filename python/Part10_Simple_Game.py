@@ -21,6 +21,7 @@ def match(code,guess):
         return clues
 secret=generate_code()
 report=[]
+print('Welcome to Code Breaker, lets see if you can guess my 3 digit code!')
 while report != 'CODE CRACKED!':
     guess=guessing()
     report=match(guess, secret)

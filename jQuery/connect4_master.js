@@ -21,7 +21,7 @@ function checkBottom(colIndex) {
   for (var row = 5; row > -1;row++) {
     colorReport = returnColor(row, colIndex);
     if (colorReport === 'rgb(128, 128, 128)') {
-      return row
+      return row;
     }
   }
 }
