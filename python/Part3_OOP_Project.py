@@ -29,8 +29,8 @@
 from random import shuffle
 
 # Two useful variables for creating Cards.
-SUITE = 'H D S C'.split()
-RANKS = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
+suit = 'H D S C'.split()
+rank = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
 
 class Deck:
     """
@@ -39,10 +39,16 @@ class Deck:
     the players. It will use SUITE and RANKS to create the deck. It should also
     have a method for splitting/cutting the deck in half and Shuffling the deck.
     """
-    def __init__(self, RANKS, SUITE):
-        self.RANKS=RANKS
-        self.SUITE=SUITE
-    def cards()
+    suit = 'H D S C'.split()
+    rank = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
+    def __init__(self):
+        print('Fresh Deck has been Created!')
+    def freshDeck(self):
+        newdeck=[]
+        for x in self.suit:
+            for y in self.rank:
+                newdeck+=(x,'of',y)
+
 
 class Hand:
     '''
@@ -63,5 +69,5 @@ class Player:
 #### GAME PLAY #######
 ######################
 print("Welcome to War, let's begin...")
-
+print(Deck.cards(rank,suit))
 # Use the 3 classes along with some logic to play a game of war!
